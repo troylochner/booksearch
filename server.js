@@ -6,15 +6,30 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
+//DO I NEED TO USE THESE ; I THINK YES.
+/*
+app.use(express.urlencoded);
+app.use(express.json())
+*/
+
+
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
+//ADD IN MY ROUTES
 app.use(routes);
 
 //setup the mongooes
 mongoose.connect(process.env.MONGODB_URI || "monogodb://localhost/googlebooks")
+
+/*,
+{
+  useCreateIndex: true,
+  useNewUrlParser: true
+}*/
+
 
 // Send every request to the React app
 // Define any API routes before this runs
