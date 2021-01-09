@@ -1,16 +1,16 @@
 import React from "react";
 
-function Footer () {
+function SearchBar () {
     return (
 
                 <div>
-                    THIS IS MY FOOTER
+                    THIS IS THE SEARCHBAR
                 </div>
             
        
     )
 }
 
-export default Footer;
+export default SearchBar;
 
 

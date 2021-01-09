@@ -1,16 +1,16 @@
 import React from "react";
 
-function Footer () {
+function BookInfo () {
     return (
 
                 <div>
-                    THIS IS MY FOOTER
+                    THIS IS SOME BOOK INFO
                 </div>
             
        
     )
 }
 
-export default Footer;
+export default BookInfo;
 
 

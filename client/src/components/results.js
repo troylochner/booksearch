@@ -1,16 +1,16 @@
 import React from "react";
 
-function Footer () {
+function Results () {
     return (
 
                 <div>
-                    THIS IS MY FOOTER
+                    RESULTS
                 </div>
             
        
     )
 }
 
-export default Footer;
+export default Results;
 
 

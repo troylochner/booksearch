@@ -1,16 +1,16 @@
 import React from "react";
 
-function Footer () {
+function Navigation () {
     return (
 
                 <div>
-                    THIS IS MY FOOTER
+                    THIS IS THE NAVIGATION AREA
                 </div>
             
        
     )
 }
 
-export default Footer;
+export default Navigation;
 
 
