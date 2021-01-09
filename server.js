@@ -21,14 +21,10 @@ if (process.env.NODE_ENV === "production") {
 //ADD IN MY ROUTES
 app.use(routes);
 
-//setup the mongooes
-mongoose.connect(process.env.MONGODB_URI || "monogodb://localhost/googlebooks")
-
-/*,
-{
-  useCreateIndex: true,
-  useNewUrlParser: true
-}*/
+//setup the
+//mongoose.connect(process.env.MONGODB_URI || "monogodb://localhost/googlebooks", {useNewUrlParser: true})
+// SAVING THE ABOVE BECAUSE OH MY GOD --- WHY DID THIS TAKE SO LONG FOR ME TO SEE THE TYPO
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {useNewUrlParser: true});
 
 
 // Send every request to the React app
