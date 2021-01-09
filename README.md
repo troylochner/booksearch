@@ -1,4 +1,6 @@
-##Book Search
+## Book Search
+
+## 2021-01-09 - Verified that backend works as expected. Kept thinking I was crazy - turned out a bad url path was killing me. 
 
 # Create React Express App
 
