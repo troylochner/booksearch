@@ -24,7 +24,12 @@ app.use(routes);
 //setup the
 //mongoose.connect(process.env.MONGODB_URI || "monogodb://localhost/googlebooks", {useNewUrlParser: true})
 // SAVING THE ABOVE BECAUSE OH MY GOD --- WHY DID THIS TAKE SO LONG FOR ME TO SEE THE TYPO
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks",     {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
+});
 
 
 // Send every request to the React app
