@@ -24,7 +24,25 @@ function loadBooks(){
                 <div>
                     <SearchBar/>
                    THIS NOT IS THE SEARCH PAGE
-                   <BookInfo/>
+
+                   {books.length ? (
+              <ul>
+                {books.map(book => {
+                  return (
+                    <li key={book._id}>
+                      <a href={"/books/" + book._id}>
+                        <strong>
+                          {book.title} by {book.author}
+                        </strong>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            ) : (
+              <h3>No Results to Display</h3>
+            )}
+              
                 </div>
 
 
