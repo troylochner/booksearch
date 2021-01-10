@@ -16,8 +16,6 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Navigation from "./components/navigation";
 import Results from "./components/results";
-import BookInfo from "./components/book-info";
-import SearchBar from "./components/searchbar";
 
 
 
@@ -25,31 +23,10 @@ class App extends Component {
   render() {
     return (
     
-    <Router>
-      <div className="App">
-        <div className="App-header">
-          
-          <Navigation/>
-          <Header/>
-          
+        <Router>
+          <Search/>
+        </Router>
 
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-
-        </div>
-
-        <SearchBar/>
-        <Results/>
-        <BookInfo/>
-
-       
-
-
-        <Footer/>
-
-      </div>
-      </Router>
-   
     );
   }
 }
