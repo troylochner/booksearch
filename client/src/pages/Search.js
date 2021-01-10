@@ -29,18 +29,14 @@ function loadBooks(){
               <ul>
                 {books.map(book => {
                   return (
-                    <li key={book._id}>
-                      <a href={"/books/" + book._id}>
-                        <strong>
-                          {book.title} by {book.author}
-                        </strong>
-                      </a>
-                    </li>
+                    <p key={book._id}>
+                      <a href={"/books/" + book._id}>{book.title} by {book.author}</a>
+                    </p>
                   );
                 })}
               </ul>
             ) : (
-              <h3>No Results to Display</h3>
+              <h3>No books were found.</h3>
             )}
               
                 </div>
